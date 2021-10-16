@@ -1,3 +1,8 @@
+:root {
+  --primary-orange: #f9ab00;
+  --primary-purple: #6c55f9;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +41,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* .navbar-light .navbar-nav .show > .nav-link, */
+/* .navbar-light .navbar-nav .active > .nav-link, */
+/* .navbar-light .navbar-nav .focus > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active, */
+/* .navbar-light .navbar-nav .nav-link:focus {
+  border-bottom: 0.1875rem solid var(--primary-purple);
+} */
