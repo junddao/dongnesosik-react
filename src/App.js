@@ -2,16 +2,13 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./components/Home";
-import { About } from "./components/About";
+// import { About } from "./components/About";
 import { Services } from "./components/Services";
 import { Contact } from "./components/Contact";
 import { EmptyPage } from "./components/EmptyPage";
 import { NavigationBar } from "./components/NavigationBar";
-import "./assets/css/bootstrap.css";
-import "./assets/css/theme.css";
-// import "./assets/css/maicons.css";
-import "./assets/vendor/animate/animate.css";
-import { NavLink } from "react-router-dom";
+import { Footer } from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -19,11 +16,8 @@ function App() {
       <div className="App">
         <NavigationBar />
         <Switch>
-          <Route exact path="/" activeClassName="active">
+          <Route exact path="/">
             <Home />
-          </Route>
-          <Route path="/about">
-            <About />
           </Route>
           <Route path="/services">
             <Services />
@@ -35,6 +29,7 @@ function App() {
             <EmptyPage></EmptyPage>
           </Route>
         </Switch>
+        <Footer />
       </div>
     </BrowserRouter>
   );

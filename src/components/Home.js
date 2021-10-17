@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ReactComponent as BannerImage } from "../assets/img/banner_image_1.svg";
-// import Cookie from "../assets/img/banner_image_1.svg";
+import { Button, Card } from "react-bootstrap";
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -35,46 +34,52 @@ export const Home = () => (
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="../assets/img/services/service-1.svg" alt="" />
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">Memil</h5>
-              <p>서버 개발 잘해요!</p>
-              <Link to="/services" class="btn btn-primary">
-                자세히 보기
-              </Link>
-            </div>
-          </div>
+          <Card>
+            <Card.Img
+              variant="top"
+              src="https://t1.daumcdn.net/cfile/blog/157F213F4E2E25EF29?original"
+              width="286"
+              height="180"
+              style={{ objectFit: "cover" }}
+            />
+            <Card.Body>
+              <Card.Title>Memil</Card.Title>
+              <Card.Text>서버 개발 잘해요.</Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
         </div>
         <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="../assets/img/services/service-2.svg" alt="" />
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">Junddao</h5>
-              <p>앱 개발 잘해요!</p>
-              <Link to="/services" class="btn btn-primary">
-                자세히 보기
-              </Link>
-            </div>
-          </div>
+          <Card>
+            <Card.Img
+              variant="top"
+              src="https://t1.daumcdn.net/cfile/blog/197F983F4E2E25F020?original"
+              width="286"
+              height="180"
+              style={{ objectFit: "cover" }}
+            />
+            <Card.Body>
+              <Card.Title>Junddao</Card.Title>
+              <Card.Text>앱 개발 잘해요!</Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
         </div>
         <div class="col-lg-4">
-          <div class="card-service wow fadeInUp">
-            <div class="header">
-              <img src="../assets/img/services/service-3.svg" alt="" />
-            </div>
-            <div class="body">
-              <h5 class="text-secondary">오일남</h5>
-              <p>깐부</p>
-              <Link to="/services" class="btn btn-primary">
-                자세히 보기
-              </Link>
-            </div>
-          </div>
+          <Card>
+            <Card.Img
+              variant="top"
+              src="https://t1.daumcdn.net/cfile/blog/1605503F4E2E25F221?original"
+              width="286"
+              height="180"
+              style={{ objectFit: "cover" }}
+            />
+            <Card.Body>
+              <Card.Title>You</Card.Title>
+              <Card.Text>잘 할꺼에요.</Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
         </div>
       </div>
     </div>

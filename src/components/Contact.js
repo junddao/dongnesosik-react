@@ -1,7 +1,39 @@
 import React from "react";
+import { Form, Button, Container, Row, Col } from "react-bootstrap";
+
+const rowStyle = {
+  paddingTop: 10,
+  paddingBottom: 10,
+};
+
+const containerStyle = {
+  paddingTop: 10,
+  paddingBottom: 50,
+};
 
 export const Contact = () => (
-  <div>
+  <div className="d-grid gap-5">
+    {/* <Container>
+      <Row>
+        <span as={Col}>Address</span>
+        <span as={Col}>소주도 독하군 마시면 뽕가리 1004번지</span>
+      </Row>
+    </Container> */}
+    <Container style={containerStyle}>
+      <Row style={rowStyle}>
+        <Col sm={2}>주소</Col>
+        <Col sm={10}>소주도 독하군 마시면 뽕가리 1004번지</Col>
+      </Row>
+      <Row style={rowStyle}>
+        <Col sm={2}>고객센터</Col>
+        <Col sm={10}>010-1234-5678</Col>
+      </Row>
+      <Row style={rowStyle}>
+        <Col sm={2}>이메일</Col>
+        <Col sm={10}>dongnesosik@gmail.com</Col>
+      </Row>
+    </Container>
+    {/* <div>
     <div class="page-section">
       <div class="container">
         <div class="row text-center align-items-center">
@@ -11,7 +43,7 @@ export const Contact = () => (
             </div>
             <p class="mb-3 font-weight-medium text-lg">Address</p>
             <p class="mb-0 text-secondary">
-              203 Fake St. Mountain View, San Francisco, California, USA
+              소주도 독하군 마시면 뽕가리 1004번지
             </p>
           </div>
           <div class="col-lg-4 py-3">
@@ -21,12 +53,7 @@ export const Contact = () => (
             <p class="mb-3 font-weight-medium text-lg">Phone</p>
             <p class="mb-0">
               <a href="#" class="text-secondary">
-                +1 232 3235 324
-              </a>
-            </p>
-            <p class="mb-0">
-              <a href="#" class="text-secondary">
-                +00 1122 3344 5566
+                +12 3456 7890
               </a>
             </p>
           </div>
@@ -37,92 +64,67 @@ export const Contact = () => (
             <p class="mb-3 font-weight-medium text-lg">Email Address</p>
             <p class="mb-0">
               <a href="#" class="text-secondary">
-                support@seogram.com
-              </a>
-            </p>
-            <p class="mb-0">
-              <a href="#" class="text-secondary">
-                hello@seogram.com
+                dongnesosik@gmail.com
               </a>
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
+    <div>
+      <Container style={containerStyle}>
+        <h2 style={{ paddingBottom: 30 }}>문의하기</h2>
+        <Form>
+          <Row>
+            <Form.Group as={Row} className="mb-3" controlId="formBasicName">
+              <Form.Label column sm={2}>
+                성명
+              </Form.Label>
+              <Col sm={10}>
+                <Form.Control type="text" placeholder="성명을 입력하세요." />
+              </Col>
+            </Form.Group>
 
-      <div class="container-fluid mt-4">
-        <div class="row">
-          <div class="col-lg-6 mb-5 mb-lg-0">
-            <form action="#" class="contact-form py-5 px-lg-5">
-              <h2 class="mb-4 font-weight-medium text-secondary">
-                Get in touch
-              </h2>
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">
-                    First Name
-                  </label>
-                  <input type="text" id="fname" class="form-control" />
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">
-                    Last Name
-                  </label>
-                  <input type="text" id="lname" class="form-control" />
-                </div>
-              </div>
+            <Form.Group as={Row} className="mb-3" controlId="formBasicEmail">
+              <Form.Label column sm={2}>
+                이메일
+              </Form.Label>
+              <Col sm={10}>
+                <Form.Control type="email" placeholder="이메일을 입력하세요." />
+              </Col>
+            </Form.Group>
 
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="email">
-                    Email
-                  </label>
-                  <input type="email" id="email" class="form-control" />
-                </div>
-              </div>
+            <Form.Group as={Row} className="mb-3" controlId="formBasicSubject">
+              <Form.Label column sm={2}>
+                제목
+              </Form.Label>
+              <Col sm={10}>
+                <Form.Control type="text" placeholder="제목을 입력하세요." />
+              </Col>
+            </Form.Group>
 
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="subject">
-                    Subject
-                  </label>
-                  <input type="text" id="subject" class="form-control" />
-                </div>
-              </div>
+            <Form.Group
+              as={Row}
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label column sm={2}>
+                내용
+              </Form.Label>
+              <Col sm={10}>
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  placeholder="내용을 입력하세요."
+                />
+              </Col>
+            </Form.Group>
 
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="message">
-                    Message
-                  </label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    class="form-control"
-                    placeholder="Write your notes or questions here..."
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="row form-group mt-4">
-                <div class="col-md-12">
-                  <input
-                    type="submit"
-                    value="Send Message"
-                    class="btn btn-primary"
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-6 px-0">
-            <div class="maps-container">
-              <div id="google-maps"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <Button className="" variant="primary" type="submit">
+              Submit
+            </Button>
+          </Row>
+        </Form>
+      </Container>
     </div>
   </div>
 );
