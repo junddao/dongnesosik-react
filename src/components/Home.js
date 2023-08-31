@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as BannerImage } from "../assets/img/banner_image_1.svg";
 import { Button, Card } from "react-bootstrap";
+import { ReactComponent as BannerImage } from "../assets/img/banner_image_1.svg";
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
