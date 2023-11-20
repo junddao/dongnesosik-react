@@ -1,14 +1,14 @@
 import React from "react";
 
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export const NavigationBar = () => (
   <Navbar bg="light" expand="lg">
     <Container>
       <Navbar.Brand href="/">
-        <span>동내</span>
-        <span style={{ color: "red" }}>소식</span>
+        <span>니가</span>
+        <span style={{ color: "red" }}>가라</span>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button, Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 const rowStyle = {
   paddingTop: 10,
@@ -22,15 +22,15 @@ export const Contact = () => (
     <Container style={containerStyle}>
       <Row style={rowStyle}>
         <Col sm={2}>주소</Col>
-        <Col sm={10}>소주도 독하군 마시면 뽕가리 1004번지</Col>
+        <Col sm={10}>경기도 성님시 분당구 동판교로 275</Col>
       </Row>
       <Row style={rowStyle}>
         <Col sm={2}>고객센터</Col>
-        <Col sm={10}>010-1234-5678</Col>
+        <Col sm={10}>010-3126-9144</Col>
       </Row>
       <Row style={rowStyle}>
         <Col sm={2}>이메일</Col>
-        <Col sm={10}>dongnesosik@gmail.com</Col>
+        <Col sm={10}>nigagaraCamping@gmail.com</Col>
       </Row>
     </Container>
     {/* <div>
@@ -70,7 +70,7 @@ export const Contact = () => (
           </div>
         </div>
       </div> */}
-    <div>
+    {/* <div>
       <Container style={containerStyle}>
         <h2 style={{ paddingBottom: 30 }}>문의하기</h2>
         <Form>
@@ -125,6 +125,6 @@ export const Contact = () => (
           </Row>
         </Form>
       </Container>
-    </div>
+    </div> */}
   </div>
 );

@@ -1,6 +1,6 @@
 import React from "react";
-import * as Icon from "react-bootstrap-icons";
 import { Button } from "react-bootstrap";
+import * as Icon from "react-bootstrap-icons";
 
 const footerStyle = {
   background: " rgba(0, 0, 0, 0.2)",
@@ -31,9 +31,9 @@ export const Footer = () => {
         </div>
 
         <div class="text-center p-3" style={footerStyle}>
-          © Dongnesosik Corp. All rights reserved :
-          <a class="text-white" href="https://dongnesosik.co.kr">
-            dongnesosik.co.kr
+          © NigagaraCamping Corp. All rights reserved :
+          <a class="text-white" href="https://nigagara.co.kr">
+            nigagaraCamping
           </a>
         </div>
       </footer>

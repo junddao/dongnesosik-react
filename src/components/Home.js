@@ -1,6 +1,6 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
-import { ReactComponent as BannerImage } from "../assets/img/banner_image_1.svg";
+import { Card } from "react-bootstrap";
+import camping_home from "../assets/img/camping_home.png";
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -17,15 +17,15 @@ export const Home = () => (
       <div class="page-banner home-banner">
         <div class="row align-items-center flex-wrap-reverse h-100">
           <div class="col-md-6 py-5 wow fadeInLeft">
-            <h1 class="mb-4">동내 소식!</h1>
+            <h1 class="mb-4">니가가라 캠핑!</h1>
             <p class="text-lg text-grey mb-5">
-              주변에 사는 이웃에게 동내 소식을 실시간으로 확인하세요!
+              캠핑장 거래를 보다 쉽고, 빠르게!
             </p>
           </div>
 
           <div class="col-md-6 py-5 wow zoomIn">
             <div class="img-fluid text-center">
-              <BannerImage />
+              <img src={camping_home} alt="camping_home" width="400" />
             </div>
           </div>
         </div>
@@ -43,9 +43,9 @@ export const Home = () => (
               style={{ objectFit: "cover" }}
             />
             <Card.Body>
-              <Card.Title>Memil</Card.Title>
-              <Card.Text>서버 개발 잘해요.</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title>쉽게</Card.Title>
+              <Card.Text>불편한 거래는 이제 그만</Card.Text>
+              {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
           </Card>
         </div>
@@ -59,9 +59,9 @@ export const Home = () => (
               style={{ objectFit: "cover" }}
             />
             <Card.Body>
-              <Card.Title>Junddao</Card.Title>
-              <Card.Text>앱 개발 잘해요!</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title>빠르게</Card.Title>
+              <Card.Text>채팅으로 빠르게</Card.Text>
+              {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
           </Card>
         </div>
@@ -75,9 +75,9 @@ export const Home = () => (
               style={{ objectFit: "cover" }}
             />
             <Card.Body>
-              <Card.Title>You</Card.Title>
-              <Card.Text>잘 할꺼에요.</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title>안전하게</Card.Title>
+              <Card.Text>거래 이력 확인으로 안전하게</Card.Text>
+              {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
           </Card>
         </div>
